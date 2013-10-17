@@ -81,7 +81,6 @@ INSTALLED_APPS = (
 )
 
 THIRTY_PARTY_APPS = (
-    'sekizai',
     'django_nose',
     'liar',
 )
@@ -95,10 +94,6 @@ MODULE_APPS = (
 INSTALLED_APPS += THIRTY_PARTY_APPS
 
 INSTALLED_APPS += MODULE_APPS
-
-TEMPLATE_CONTEXT_PROCESSORS = DEFAULT_SETTINGS.TEMPLATE_CONTEXT_PROCESSORS + (
-    'sekizai.context_processors.sekizai ',
-)
 
 TEST_RUNNER = 'django_nose.NoseTestSuiteRunner'
 

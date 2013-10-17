@@ -10,10 +10,12 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-liar',
-    version='0.1',
-    packages=['liar'],
+    version='0.1.1',
+    packages=[
+        'liar',
+    ],
     include_package_data=True,
-    license='BSD License',  # example license
+    license='BSD License', # example license
     description='A simple django app that invalidates url resolving of apps.',
     long_description=README,
     url='https://github.com/lalo73/django-liar',
