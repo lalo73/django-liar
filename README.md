@@ -5,7 +5,7 @@ A simple django app with a ( modified ) url function that doesn't resolve invali
 
 In your ROOT_URLCONF module use liar.utils.url instead django url
 
-<code>
+<nowiki>
 from django.conf.urls import patterns, include
 from liar.utils import url
 from django.contrib import admin
@@ -18,12 +18,12 @@ urlpatterns = patterns(
     url(r'^', include('invalidapp.urls')),
     url(r'^', include('validapp.urls')),
 )
-</code>
+</nowiki>
 
 In your settings put:
-<code>
+<nowiki>
 INVALID_APPS = [
     'invalidapp'
 ]
-</code>
+</nowiki>
 Only works using include('app.url_file') notation.
