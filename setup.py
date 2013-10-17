@@ -16,9 +16,9 @@ setup(
     license='BSD License',  # example license
     description='A simple django app that invalidates url resolving of apps.',
     long_description=README,
-    url='http://www.example.com/',
-    author='Your Name',
-    author_email='yourname@example.com',
+    url='https://github.com/lalo73/django-liar',
+    author='Leandro Gomez',
+    author_email='leandro.gz73@gmail.com',
     classifiers=[
         'Environment :: Web Environment',
         'Framework :: Django',
