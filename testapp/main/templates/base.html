@@ -1,0 +1,16 @@
+{% load sekizai_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% if page_title %}{{ page_title }}{% endif %}</title>
+</head>
+{% render_block "css" %}
+<body>
+
+<div class="container">
+    {% block content %}
+    {% endblock content %}
+</div>
+{% render_block "js" %}
+</body>
+</html>
