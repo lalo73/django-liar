@@ -44,3 +44,4 @@ media/*
 
 .env
 .idea/
+testapp/testapp.db
